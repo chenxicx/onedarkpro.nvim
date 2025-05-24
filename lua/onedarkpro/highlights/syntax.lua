@@ -34,7 +34,7 @@ function M.groups(theme)
         PreCondit = { fg = theme.palette.yellow }, -- preprocessor #if, #else, #endif, etc
 
         Type = { fg = theme.palette.yellow, style = config.styles.types }, -- (preferred) int, long, char, etc
-        StorageClass = { fg = theme.palette.yellow }, -- static, register, volatile, etc
+        StorageClass = { fg = theme.palette.purple}, -- static, register, volatile, etc
         Structure = { fg = theme.palette.purple }, -- struct, union, enum, etc
         Typedef = { fg = theme.palette.purple }, -- A typedef
 

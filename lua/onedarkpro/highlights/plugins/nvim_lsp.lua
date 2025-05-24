@@ -19,10 +19,10 @@ function M.groups(theme)
         DiagnosticSignInfo = { fg = theme.palette.blue },
         DiagnosticSignHint = { fg = theme.palette.cyan },
 
-        DiagnosticUnderlineError = { fg = theme.palette.red, undercurl = true },
-        DiagnosticUnderlineWarn = { fg = theme.palette.yellow, undercurl = true },
-        DiagnosticUnderlineInfo = { fg = theme.palette.blue, undercurl = true },
-        DiagnosticUnderlineHint = { fg = theme.palette.cyan, undercurl = true },
+        DiagnosticUnderlineError = { undercurl = true, sp = theme.palette.red },
+        DiagnosticUnderlineWarn = { undercurl = true, sp = theme.palette.yellow },
+        DiagnosticUnderlineInfo = { undercurl = true, sp = theme.palette.blue },
+        DiagnosticUnderlineHint = { undercurl = true, sp = theme.palette.cyan },
 
         DiagnosticVirtualTextError = { fg = theme.generated.virtual_text_error, style = config.styles.virtual_text },
         DiagnosticVirtualTextWarn = { fg = theme.generated.virtual_text_warning, style = config.styles.virtual_text },
