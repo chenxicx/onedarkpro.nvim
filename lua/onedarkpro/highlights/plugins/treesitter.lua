@@ -38,10 +38,10 @@ function M.groups(theme)
         ["@number.float"] = { link = "Float" }, -- floating-point number literals
 
         -- Types
-        ["@type"] = { link = "Type" }, -- type or class definitions and annotations
+        ["@type"] = { fg = theme.palette.yellow, style = config.styles.types }, -- type or class definitions and annotations
         ["@type.builtin"] = { link = "@type" }, -- built-in types
         ["@type.definition"] = { link = "@type" }, -- type definitions (e.g. `typedef` in C)
-        ["@type.qualifier"] = { link = "@type" }, -- type qualifiers (e.g. `const`)
+        ["@type.qualifier"] = { fg = theme.palette.purple }, -- type qualifiers (e.g. `const`)
 
         ["@attribute"] = { fg = theme.palette.purple }, --attribute annotations (e.g. Python decorators)
         ["@property"] = { fg = theme.palette.red }, -- similar to `@field`
@@ -62,6 +62,8 @@ function M.groups(theme)
         ["@keyword"] = { link = "Keyword" }, -- For keywords that don't fall in previous categories.
         ["@keyword.function"] = { fg = theme.palette.purple, style = config.styles.functions }, -- For keywords used to define a function.
         ["@keyword.operator"] = { fg = theme.palette.purple, style = config.styles.operators }, -- For operators that are English words, e.g. `and`, `as`, `or`.
+        ["@keyword.modifier"] = { fg = theme.palette.purple }, -- modifier keywords (e.g. `explicit`, `virtual`)
+        ["@keyword.storage"] = { fg = theme.palette.purple }, -- storage class keywords (e.g. `const`, `static`)
         ["@keyword.import"] = { link = "@keyword" }, -- keywords for including modules (e.g. `import` / `from` in Python)
         ["@keyword.repeat"] = { link = "@keyword" }, -- keywords related to loops (e.g. `for` / `while`)
         ["@keyword.return"] = { link = "@keyword" }, -- for the `return` and `yield` keywords.

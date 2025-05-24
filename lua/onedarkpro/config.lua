@@ -32,6 +32,7 @@ local defaults = {
     },
     filetypes = { -- Enable/disable specific plugins
         c = true,
+        cpp = true,
         comment = true,
         go = true,
         html = true,
